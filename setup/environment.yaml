@@ -1,0 +1,13 @@
+name: asmr
+channels:
+  - defaults
+dependencies:
+  - python>=3.11
+  - numpy
+  - matplotlib
+  - scipy
+  - scikit-learn
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - seaborn

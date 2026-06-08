@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!-- LiDAR sensor snippet — ASMR Tutorial Week 3
+     =============================================
+     Paste this entire block into robot.gazebo as a new top-level
+     element (sibling of the existing <gazebo> blocks, NOT nested
+     inside another <gazebo reference="lidar_link"> element).
+     Fill in every TODO from the task specification and
+     the Gazebo sensor documentation.
+-->
+
+<gazebo reference="lidar_link">
+  <sensor type="gpu_lidar" name="lidar_sensor">
+    <always_on><!-- TODO --></always_on>
+    <visualize><!-- TODO --></visualize>
+    <update_rate><!-- TODO --></update_rate>
+    <topic><!-- TODO: Gazebo-internal topic name --></topic>
+    <gz_frame_id><!-- TODO: must match the URDF link name --></gz_frame_id>
+    <ray>
+      <scan>
+        <horizontal>
+          <samples><!-- TODO --></samples>
+          <resolution><!-- TODO --></resolution>
+          <min_angle><!-- TODO --></min_angle>
+          <max_angle><!-- TODO --></max_angle>
+        </horizontal>
+        <vertical>
+          <samples>1</samples>
+          <resolution>0.01</resolution>
+          <min_angle>0</min_angle>
+          <max_angle>0</max_angle>
+        </vertical>
+      </scan>
+      <range>
+        <min><!-- TODO --></min>
+        <max><!-- TODO --></max>
+        <resolution><!-- TODO --></resolution>
+      </range>
+    </ray>
+  </sensor>
+</gazebo>

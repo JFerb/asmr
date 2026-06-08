@@ -1,0 +1,55 @@
+# === Media ===
+*.mp4
+docs
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# === Jupyter ===
+.ipynb_checkpoints/
+*.ipynb_metadata
+
+# === Environment ===
+.env
+.venv/
+env/
+venv/
+
+# === IDE / Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === ROS 2 build artifacts ===
+log/
+install/
+
+# === Node (Slidev workspace) ===
+node_modules/
+package.json
+package-lock.json
+
+# === LaTeX build artifacts ===
+*.aux
+*.log
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.out
+
+# === Student-generated data (from notebook exercises) ===
+week_0/python-intro/data/sensor_data.csv
+week_0/python-intro/data/my_random_data.csv
+week_0/python-intro/data/robot_runs.csv
