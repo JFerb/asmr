@@ -1,0 +1,18 @@
+[2.439s] Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/build --no-deps symlink_data
+[2.685s] running develop
+[2.883s] running egg_info
+[2.897s] writing my_robot_perception.egg-info/PKG-INFO
+[2.905s] writing dependency_links to my_robot_perception.egg-info/dependency_links.txt
+[2.913s] writing entry points to my_robot_perception.egg-info/entry_points.txt
+[2.922s] writing requirements to my_robot_perception.egg-info/requires.txt
+[2.930s] writing top-level names to my_robot_perception.egg-info/top_level.txt
+[2.963s] reading manifest file 'my_robot_perception.egg-info/SOURCES.txt'
+[3.005s] writing manifest file 'my_robot_perception.egg-info/SOURCES.txt'
+[3.023s] running build_ext
+[3.023s] Creating /home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/python3.12/site-packages/my-robot-perception.egg-link (link to .)
+[3.028s] Installing goal_checker_node script to /home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/my_robot_perception
+[3.030s] Installing scan_to_pointcloud_node script to /home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/my_robot_perception
+[3.033s] 
+[3.033s] Installed /home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception
+[3.034s] running symlink_data
+[3.138s] Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/build --no-deps symlink_data

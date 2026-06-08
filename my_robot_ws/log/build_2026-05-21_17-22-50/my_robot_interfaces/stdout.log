@@ -1,0 +1,202 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /opt/conda/bin/python3 (found version "3.12.8") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found action_msgs: 2.0.3 (/opt/ros/jazzy/share/action_msgs/cmake)
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /opt/conda/bin/python3  
+-- Found Python3: /opt/conda/bin/python3 (found version "3.12.8") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Found Python3: /opt/conda/bin/python3 (found version "3.12.8") found components: Interpreter 
+-- Configuring done (11.4s)
+-- Generating done (0.3s)
+-- Build files have been written to: /home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces
+[  5%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[  5%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[  5%] Built target ament_cmake_python_symlink_my_robot_interfaces
+[  5%] Built target my_robot_interfaces__rosidl_generator_type_description
+[  8%] [34m[1mGenerating C code for ROS interfaces[0m
+[ 11%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[ 11%] Built target my_robot_interfaces__rs
+running egg_info
+creating my_robot_interfaces.egg-info
+writing my_robot_interfaces.egg-info/PKG-INFO
+writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[ 11%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[ 14%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/action/detail/set_velocity__description.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/action/detail/set_velocity__functions.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/action/detail/set_velocity__type_support.c.o[0m
+[ 20%] Built target my_robot_interfaces__cpp
+[ 22%] [32m[1mLinking C shared library libmy_robot_interfaces__rosidl_generator_c.so[0m
+[ 22%] Built target my_robot_interfaces__rosidl_generator_c
+[ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 40%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 40%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 40%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 40%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/action/set_velocity__type_support.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/action/set_velocity__type_support.cpp.o[0m
+[ 48%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/action/detail/set_velocity__type_support.cpp.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/action/detail/set_velocity__type_support.c.o[0m
+[ 54%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_c.so[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/action/detail/dds_fastrtps/set_velocity__type_support.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/action/detail/set_velocity__type_support_c.cpp.o[0m
+[ 62%] [32m[1mLinking C shared library libmy_robot_interfaces__rosidl_typesupport_introspection_c.so[0m
+[ 62%] Built target my_robot_interfaces__rosidl_typesupport_c
+[ 62%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c
+[ 65%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_cpp.so[0m
+[ 68%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 71%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 71%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[ 71%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[ 71%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[ 74%] [32m[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 74%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 74%] Built target my_robot_interfaces
+[ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 77%] Built target my_robot_interfaces__py
+[ 80%] [32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/action/_set_velocity_s.c.o[0m
+[ 82%] [32m[1mLinking C shared library libmy_robot_interfaces__rosidl_generator_py.so[0m
+[ 82%] Built target my_robot_interfaces__rosidl_generator_py
+[ 85%] [32mBuilding C object CMakeFiles/my_robot_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 88%] [32mBuilding C object CMakeFiles/my_robot_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 94%] [32m[1mLinking C shared module rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.so[0m
+[ 97%] [32m[1mLinking C shared module rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[100%] [32m[1mLinking C shared module rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[100%] Built target my_robot_interfaces_s__rosidl_typesupport_c
+[100%] Built target my_robot_interfaces_s__rosidl_typesupport_introspection_c
+[100%] Built target my_robot_interfaces_s__rosidl_typesupport_fastrtps_c
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_robot_interfaces
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/action/SetVelocity.json
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__functions.h
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__struct.h
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__type_support.h
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/set_velocity.h
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.sh
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.dsv
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__rosidl_typesupport_fastrtps_c.h
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__rosidl_typesupport_introspection_c.h
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__builder.hpp
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__struct.hpp
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__traits.hpp
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__type_support.hpp
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/set_velocity.hpp
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/action/detail/set_velocity__rosidl_typesupport_introspection_cpp.hpp
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.sh
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.dsv
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces-0.0.1-py3.12.egg-info/PKG-INFO
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces-0.0.1-py3.12.egg-info/SOURCES.txt
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces-0.0.1-py3.12.egg-info/dependency_links.txt
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces-0.0.1-py3.12.egg-info/top_level.txt
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/__init__.py
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/action/__init__.py
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/action/_set_velocity.py
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/action/_set_velocity_s.c
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.so
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.so
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.so
+-- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.so
+-- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.so
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/ament_index/resource_index/rust_packages/my_robot_interfaces
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/rust/Cargo.toml
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/rust/build.rs
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/rust/src/action.rs
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/rust/src/action/rmw.rs
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/rust/src/lib.rs
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/action/SetVelocity.idl
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/action/SetVelocity.action
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_robot_interfaces
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_robot_interfaces
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.sh
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.dsv
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.sh
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.dsv
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.bash
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.sh
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.zsh
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.dsv
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/ament_index/resource_index/packages/my_robot_interfaces
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig.cmake
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig-version.cmake
+-- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.xml
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so" to ""
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so" to ""
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so" to ""
+Listing '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces'...
+Compiling '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/__init__.py'...
+Listing '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/action'...
+Compiling '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/action/__init__.py'...
+Compiling '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages/my_robot_interfaces/action/_set_velocity.py'...
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so" to ""
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport.cmake
+-- Installing: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake

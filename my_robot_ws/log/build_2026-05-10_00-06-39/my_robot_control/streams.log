@@ -1,0 +1,15 @@
+[0.808s] Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/build --no-deps symlink_data
+[1.044s] running develop
+[1.186s] running egg_info
+[1.199s] writing my_robot_control.egg-info/PKG-INFO
+[1.205s] writing dependency_links to my_robot_control.egg-info/dependency_links.txt
+[1.212s] writing requirements to my_robot_control.egg-info/requires.txt
+[1.217s] writing top-level names to my_robot_control.egg-info/top_level.txt
+[1.249s] reading manifest file 'my_robot_control.egg-info/SOURCES.txt'
+[1.250s] writing manifest file 'my_robot_control.egg-info/SOURCES.txt'
+[1.268s] running build_ext
+[1.268s] Creating /home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/lib/python3.12/site-packages/my-robot-control.egg-link (link to .)
+[1.274s] 
+[1.274s] Installed /home/j/jferber/tutorial/my_robot_ws/build/my_robot_control
+[1.274s] running symlink_data
+[1.302s] Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/build --no-deps symlink_data

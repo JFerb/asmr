@@ -1,0 +1,440 @@
+[0.137s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.138s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f4371e682f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f4371fc80e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f4371fc80e0>>, mixin_verb=('build',))
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.188s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/j/jferber/tutorial/my_robot_ws'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ros'
+[0.347s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_bringup' with type 'ros.ament_cmake' and name 'my_robot_bringup'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_control) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_control) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_control) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_control) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_control) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_control) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_control) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_control) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_control) by extension 'ros'
+[0.349s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_control' with type 'ros.ament_python' and name 'my_robot_control'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_description) by extension 'ros'
+[0.350s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_description' with type 'ros.ament_cmake' and name 'my_robot_description'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extension 'ignore'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extension 'ignore_ament_install'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extensions ['colcon_pkg']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extension 'colcon_pkg'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extensions ['colcon_meta']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extension 'colcon_meta'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extensions ['ros']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_interfaces) by extension 'ros'
+[0.352s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_interfaces' with type 'ros.ament_cmake' and name 'my_robot_interfaces'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_nav) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_nav) by extension 'ignore_ament_install'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_nav) by extensions ['colcon_pkg']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_nav) by extension 'colcon_pkg'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_nav) by extensions ['colcon_meta']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_nav) by extension 'colcon_meta'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_nav) by extensions ['ros']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_nav) by extension 'ros'
+[0.354s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_nav' with type 'ros.ament_python' and name 'my_robot_nav'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_perception) by extensions ['ignore', 'ignore_ament_install']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_perception) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_perception) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_perception) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_perception) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_perception) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_perception) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_perception) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_perception) by extension 'ros'
+[0.355s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_perception' with type 'ros.ament_python' and name 'my_robot_perception'
+[0.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.355s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.377s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup', 'merge_install': False, 'path': '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_control' build argument 'cmake_args' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_control' build argument 'cmake_target' from command line to 'None'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.377s] Level 5:colcon.colcon_core.verb:set package 'my_robot_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.378s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control', 'merge_install': False, 'path': '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_control', 'symlink_install': True, 'test_result_base': None}
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_target' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.378s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description', 'merge_install': False, 'path': '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_description', 'symlink_install': True, 'test_result_base': None}
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.378s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.379s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces', 'merge_install': False, 'path': '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_perception' build argument 'cmake_args' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_perception' build argument 'cmake_target' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_perception' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_perception' build argument 'cmake_clean_cache' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_perception' build argument 'cmake_clean_first' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_perception' build argument 'cmake_force_configure' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_perception' build argument 'ament_cmake_args' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_perception' build argument 'catkin_cmake_args' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_perception' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.379s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_perception' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception', 'merge_install': False, 'path': '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_perception', 'symlink_install': True, 'test_result_base': None}
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_nav' build argument 'cmake_args' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_nav' build argument 'cmake_target' from command line to 'None'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.379s] Level 5:colcon.colcon_core.verb:set package 'my_robot_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'my_robot_nav' build argument 'cmake_clean_first' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'my_robot_nav' build argument 'cmake_force_configure' from command line to 'False'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'my_robot_nav' build argument 'ament_cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'my_robot_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.380s] Level 5:colcon.colcon_core.verb:set package 'my_robot_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.380s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav', 'merge_install': False, 'path': '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_nav', 'symlink_install': True, 'test_result_base': None}
+[0.380s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.381s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.381s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_interfaces' with build type 'ament_cmake'
+[0.381s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_interfaces'
+[0.384s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.384s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.384s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.833s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_perception' with build type 'ament_python'
+[0.833s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_perception', 'ament_prefix_path')
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/hook/ament_prefix_path.ps1'
+[1.151s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/hook/ament_prefix_path.dsv'
+[1.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/hook/ament_prefix_path.sh'
+[1.975s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.976s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.208s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_bringup' with build type 'ament_cmake'
+[2.209s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_bringup'
+[2.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.209s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.480s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_control' with build type 'ament_python'
+[2.480s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_control', 'ament_prefix_path')
+[2.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/hook/ament_prefix_path.ps1'
+[3.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/hook/ament_prefix_path.dsv'
+[3.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/hook/ament_prefix_path.sh'
+[3.323s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.551s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_description' with build type 'ament_cmake'
+[3.551s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_description'
+[3.551s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.551s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.714s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --build /home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces -- -j32 -l32
+[5.641s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_perception'
+[5.641s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.641s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --build /home/j/jferber/tutorial/my_robot_ws/build/my_robot_bringup -- -j32 -l32
+[7.635s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_control'
+[7.635s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.635s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --build /home/j/jferber/tutorial/my_robot_ws/build/my_robot_bringup -- -j32 -l32
+[8.287s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --install /home/j/jferber/tutorial/my_robot_ws/build/my_robot_bringup
+[10.240s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --build /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description -- -j32 -l32
+[11.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --build /home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces -- -j32 -l32
+[11.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --install /home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces
+[11.631s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup)
+[11.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --install /home/j/jferber/tutorial/my_robot_ws/build/my_robot_bringup
+[11.635s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup' for CMake module files
+[11.637s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup' for CMake config files
+[11.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup', 'cmake_prefix_path')
+[11.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.ps1'
+[13.103s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.dsv'
+[13.887s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.sh'
+[14.809s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/bin'
+[14.810s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/lib/pkgconfig/my_robot_bringup.pc'
+[14.810s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/lib/python3.12/site-packages'
+[14.810s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/bin'
+[14.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.ps1'
+[14.818s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv'
+[14.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.sh'
+[14.825s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.bash'
+[14.831s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.zsh'
+[14.835s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/colcon-core/packages/my_robot_bringup)
+[14.840s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup)
+[14.840s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup' for CMake module files
+[14.841s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup' for CMake config files
+[14.842s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup', 'cmake_prefix_path')
+[14.842s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.ps1'
+[14.847s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.dsv'
+[14.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.sh'
+[14.856s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/bin'
+[14.856s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/lib/pkgconfig/my_robot_bringup.pc'
+[14.856s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/lib/python3.12/site-packages'
+[14.856s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/bin'
+[14.857s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.ps1'
+[14.873s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv'
+[14.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.sh'
+[14.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.bash'
+[14.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/my_robot_bringup/package.zsh'
+[14.893s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup/share/colcon-core/packages/my_robot_bringup)
+[14.911s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_interfaces)
+[14.912s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces' for CMake module files
+[14.913s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --build /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description -- -j32 -l32
+[14.919s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces' for CMake config files
+[14.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --install /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description
+[14.927s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'cmake_prefix_path')
+[14.927s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.ps1'
+[14.930s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception': PYTHONPATH=/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/build --no-deps symlink_data
+[14.931s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --install /home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces
+[14.935s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.dsv'
+[14.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.sh'
+[14.945s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib'
+[14.946s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'ld_library_path_lib')
+[14.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.ps1'
+[14.950s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.dsv'
+[14.954s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.sh'
+[14.961s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/bin'
+[14.961s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/pkgconfig/my_robot_interfaces.pc'
+[14.962s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages'
+[14.962s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'pythonpath')
+[14.962s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/pythonpath.ps1'
+[14.966s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/pythonpath.dsv'
+[14.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/pythonpath.sh'
+[14.975s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/bin'
+[14.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.ps1'
+[14.982s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv'
+[14.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.sh'
+[14.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.bash'
+[14.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.zsh'
+[14.996s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/colcon-core/packages/my_robot_interfaces)
+[15.001s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_interfaces)
+[15.001s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces' for CMake module files
+[15.003s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces' for CMake config files
+[15.004s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'cmake_prefix_path')
+[15.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.ps1'
+[15.008s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.dsv'
+[15.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.sh'
+[15.017s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib'
+[15.017s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'ld_library_path_lib')
+[15.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.ps1'
+[15.023s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.dsv'
+[15.028s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.sh'
+[15.034s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/bin'
+[15.034s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/pkgconfig/my_robot_interfaces.pc'
+[15.034s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages'
+[15.034s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'pythonpath')
+[15.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/pythonpath.ps1'
+[15.040s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/pythonpath.dsv'
+[15.046s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/hook/pythonpath.sh'
+[15.052s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/bin'
+[15.053s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.ps1'
+[15.058s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv'
+[15.063s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.sh'
+[15.067s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.bash'
+[15.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.zsh'
+[15.457s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/share/colcon-core/packages/my_robot_interfaces)
+[15.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_description)
+[15.468s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description' for CMake module files
+[15.470s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description' for CMake config files
+[15.471s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_description', 'cmake_prefix_path')
+[15.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.ps1'
+[15.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control': PYTHONPATH=/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/build --no-deps symlink_data
+[15.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --install /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description
+[15.478s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.dsv'
+[15.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.sh'
+[15.490s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/bin'
+[15.490s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/lib/pkgconfig/my_robot_description.pc'
+[15.490s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/lib/python3.12/site-packages'
+[15.491s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/bin'
+[15.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.ps1'
+[15.496s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.dsv'
+[15.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.sh'
+[15.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.bash'
+[15.506s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.zsh'
+[15.512s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/colcon-core/packages/my_robot_description)
+[15.514s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_description)
+[15.515s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description' for CMake module files
+[15.516s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description' for CMake config files
+[15.517s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_description', 'cmake_prefix_path')
+[15.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.ps1'
+[15.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.dsv'
+[15.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/hook/cmake_prefix_path.sh'
+[15.532s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/bin'
+[15.532s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/lib/pkgconfig/my_robot_description.pc'
+[15.532s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/lib/python3.12/site-packages'
+[15.533s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/bin'
+[15.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.ps1'
+[15.539s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.dsv'
+[15.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.sh'
+[15.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.bash'
+[15.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.zsh'
+[15.565s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/colcon-core/packages/my_robot_description)
+[15.771s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_perception', 'pythonpath_develop')
+[15.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/share/my_robot_perception/hook/pythonpath_develop.ps1'
+[15.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception' returned '0': PYTHONPATH=/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/build --no-deps symlink_data
+[15.778s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/share/my_robot_perception/hook/pythonpath_develop.dsv'
+[15.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception/share/my_robot_perception/hook/pythonpath_develop.sh'
+[15.789s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception' for CMake module files
+[15.791s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception' for CMake config files
+[15.791s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib'
+[15.792s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/bin'
+[15.792s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/pkgconfig/my_robot_perception.pc'
+[15.792s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/python3.12/site-packages'
+[15.792s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_perception', 'pythonpath')
+[15.792s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/hook/pythonpath.ps1'
+[15.799s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/hook/pythonpath.dsv'
+[15.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/hook/pythonpath.sh'
+[15.813s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/bin'
+[15.813s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_perception)
+[15.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/package.ps1'
+[15.819s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/package.dsv'
+[15.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/package.sh'
+[15.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/package.bash'
+[15.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/my_robot_perception/package.zsh'
+[15.839s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/share/colcon-core/packages/my_robot_perception)
+[15.844s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_nav' with build type 'ament_python'
+[15.844s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_nav', 'ament_prefix_path')
+[15.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/hook/ament_prefix_path.ps1'
+[15.853s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/hook/ament_prefix_path.dsv'
+[15.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/hook/ament_prefix_path.sh'
+[15.863s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.863s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.159s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/j/jferber/tutorial/my_robot_ws/src/my_robot_nav'
+[16.159s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[16.159s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.328s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_control', 'pythonpath_develop')
+[16.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/share/my_robot_control/hook/pythonpath_develop.ps1'
+[16.331s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control' returned '0': PYTHONPATH=/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/build --no-deps symlink_data
+[16.337s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/share/my_robot_control/hook/pythonpath_develop.dsv'
+[16.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control/share/my_robot_control/hook/pythonpath_develop.sh'
+[16.348s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control' for CMake module files
+[16.349s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control' for CMake config files
+[16.350s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/lib'
+[16.350s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/bin'
+[16.350s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/lib/pkgconfig/my_robot_control.pc'
+[16.350s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/lib/python3.12/site-packages'
+[16.351s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_control', 'pythonpath')
+[16.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/hook/pythonpath.ps1'
+[16.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/hook/pythonpath.dsv'
+[16.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/hook/pythonpath.sh'
+[16.365s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/bin'
+[16.365s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_control)
+[16.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/package.ps1'
+[16.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/package.dsv'
+[16.375s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/package.sh'
+[16.380s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/package.bash'
+[16.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/my_robot_control/package.zsh'
+[16.389s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/share/colcon-core/packages/my_robot_control)
+[16.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav': AMENT_PREFIX_PATH=/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup:/opt/ros/jazzy PYTHONPATH=/home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/lib/python3.12/site-packages:/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/python3.12/site-packages:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/lib/python3.12/site-packages:/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav/build --no-deps symlink_data
+[17.758s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_nav', 'pythonpath_develop')
+[17.759s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav/share/my_robot_nav/hook/pythonpath_develop.ps1'
+[17.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav' returned '0': AMENT_PREFIX_PATH=/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_description:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_bringup:/opt/ros/jazzy PYTHONPATH=/home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/lib/python3.12/site-packages:/home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/python3.12/site-packages:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_interfaces/lib/python3.12/site-packages:/home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/lib/python3.12/site-packages:/home/j/jferber/tutorial/my_robot_ws/build/my_robot_control:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav/build --no-deps symlink_data
+[17.767s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav/share/my_robot_nav/hook/pythonpath_develop.dsv'
+[17.771s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_nav/share/my_robot_nav/hook/pythonpath_develop.sh'
+[17.777s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav' for CMake module files
+[17.778s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav' for CMake config files
+[17.779s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/lib'
+[17.779s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/bin'
+[17.779s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/lib/pkgconfig/my_robot_nav.pc'
+[17.780s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/lib/python3.12/site-packages'
+[17.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_nav', 'pythonpath')
+[17.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/hook/pythonpath.ps1'
+[17.786s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/hook/pythonpath.dsv'
+[17.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/hook/pythonpath.sh'
+[17.797s] Level 1:colcon.colcon_core.environment:checking '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/bin'
+[17.797s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_nav)
+[17.797s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/package.ps1'
+[17.805s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/package.dsv'
+[17.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/package.sh'
+[17.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/package.bash'
+[17.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/my_robot_nav/package.zsh'
+[17.829s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav/share/colcon-core/packages/my_robot_nav)
+[17.834s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[17.834s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[17.835s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[17.835s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[17.849s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[17.849s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[17.849s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[17.849s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[17.854s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[17.855s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[17.856s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/j/jferber/tutorial/my_robot_ws/install/local_setup.ps1'
+[17.860s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/j/jferber/tutorial/my_robot_ws/install/_local_setup_util_ps1.py'
+[17.866s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/j/jferber/tutorial/my_robot_ws/install/setup.ps1'
+[17.876s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/j/jferber/tutorial/my_robot_ws/install/local_setup.sh'
+[17.880s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/j/jferber/tutorial/my_robot_ws/install/_local_setup_util_sh.py'
+[17.886s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/j/jferber/tutorial/my_robot_ws/install/setup.sh'
+[17.893s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/j/jferber/tutorial/my_robot_ws/install/local_setup.bash'
+[17.899s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/j/jferber/tutorial/my_robot_ws/install/setup.bash'
+[17.906s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/j/jferber/tutorial/my_robot_ws/install/local_setup.zsh'
+[17.911s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/j/jferber/tutorial/my_robot_ws/install/setup.zsh'

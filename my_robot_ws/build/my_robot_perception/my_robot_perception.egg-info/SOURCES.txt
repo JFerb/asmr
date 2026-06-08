@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+my_robot_perception/__init__.py
+my_robot_perception/goal_checker_node.py
+my_robot_perception/odom_utils.py
+my_robot_perception/scan_to_pointcloud_node.py
+my_robot_perception/scan_utils.py
+my_robot_perception.egg-info/PKG-INFO
+my_robot_perception.egg-info/SOURCES.txt
+my_robot_perception.egg-info/dependency_links.txt
+my_robot_perception.egg-info/entry_points.txt
+my_robot_perception.egg-info/requires.txt
+my_robot_perception.egg-info/top_level.txt
+my_robot_perception.egg-info/zip-safe
+resource/my_robot_perception

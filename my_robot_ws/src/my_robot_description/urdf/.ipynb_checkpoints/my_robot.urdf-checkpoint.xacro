@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<robot name="my_robot"
+    xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find my_robot_description)/urdf/robot.gazebo"/>
+
+  <!-- Box (chassis) -->
+  <xacro:property name="box_l"    value="0.30"/>  <!-- length along x [m] -->
+  <xacro:property name="box_w"    value="0.20"/>  <!-- width  along y [m] -->
+  <xacro:property name="box_h"    value="0.10"/>  <!-- height along z [m] -->
+  <xacro:property name="box_m"    value="5.0"/>   <!-- mass [kg]          -->
+
+  <!-- Cylinder (drive wheel) -->
+  <xacro:property name="cyl_r"    value="0.05"/>  <!-- radius [m]  -->
+  <xacro:property name="cyl_l"    value="0.03"/>  <!-- length [m]  -->
+  <xacro:property name="cyl_m"    value="0.5"/>   <!-- mass   [kg] -->
+
+  <!-- Sphere (caster) -->
+  <xacro:property name="sph_r"    value="0.025"/> <!-- radius [m]  -->
+  <xacro:property name="sph_m"    value="0.1"/>   <!-- mass   [kg] -->
+
+
+  <link name="base_link">
+
+    <visual>
+      <geometry>
+        <box size="${box_l} ${box_w} ${box_h}"/>
+      </geometry>
+      <material name="grey">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="${box_l} ${box_w} ${box_h}"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="${box_m}"/>
+      <inertia
+        ixx="${box_m / 12 * (box_w**2 + box_h**2)}" ixy="0" ixz="0"
+        iyy="${box_m / 12 * (box_l**2 + box_h**2)}" iyz="0"
+        izz="${box_m / 12 * (box_l**2 + box_w**2)}"/>
+    </inertial>
+
+  </link>
+
+
+  <link name="left_wheel_link">
+
+    <visual>
+      <geometry>
+        <cylinder radius="${cyl_r}" length="${cyl_l}"/>
+      </geometry>
+      <material name="dark">
+        <color rgba="0.2 0.2 0.2 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="${cyl_r}" length="${cyl_l}"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="${cyl_m}"/>
+      <inertia
+        ixx="${cyl_m / 12 * (3 * cyl_r**2 + cyl_l**2)}" ixy="0" ixz="0"
+        iyy="${cyl_m / 12 * (3 * cyl_r**2 + cyl_l**2)}" iyz="0"
+        izz="${cyl_m / 2  *  cyl_r**2}"/>
+    </inertial>
+
+  </link>
+
+
+  <link name="right_wheel_link">
+
+    <visual>
+      <geometry>
+        <cylinder radius="${cyl_r}" length="${cyl_l}"/>
+      </geometry>
+      <material name="dark">
+        <color rgba="0.2 0.2 0.2 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="${cyl_r}" length="${cyl_l}"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="${cyl_m}"/>
+      <inertia
+        ixx="${cyl_m / 12 * (3 * cyl_r**2 + cyl_l**2)}" ixy="0" ixz="0"
+        iyy="${cyl_m / 12 * (3 * cyl_r**2 + cyl_l**2)}" iyz="0"
+        izz="${cyl_m / 2  *  cyl_r**2}"/>
+    </inertial>
+
+  </link>
+
+
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child  link="left_wheel_link"/>
+    <!-- origin: position of child frame relative to parent frame -->
+    <origin xyz="0.05 0.13 ${-box_h / 2}" rpy="-1.5708 0 0"/>
+    <!-- axis: rotation axis in the child frame after rpy is applied -->
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.1" friction="0.1"/>
+  </joint>
+
+
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child  link="right_wheel_link"/>
+    <!-- origin: position of child frame relative to parent frame -->
+    <origin xyz="0.05 -0.13 ${-box_h / 2}" rpy="-1.5708 0 0"/>
+    <!-- axis: rotation axis in the child frame after rpy is applied -->
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.1" friction="0.1"/>
+  </joint>
+
+
+  <link name="caster_link">
+
+    <visual>
+      <geometry>
+        <sphere radius="${sph_r}"/>
+      </geometry>
+      <material name="light">
+        <color rgba="0.8 0.8 0.8 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <sphere radius="${sph_r}"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="${sph_m}"/>
+      <inertia
+        ixx="${2/5 * sph_m * sph_r**2}" ixy="0" ixz="0"
+        iyy="${2/5 * sph_m * sph_r**2}" iyz="0"
+        izz="${2/5 * sph_m * sph_r**2}"/>
+    </inertial>
+  </link>
+
+
+  <joint name="caster_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="caster_link"/>
+    <!-- z: sphere must touch the ground → sph_r above ground,
+         box_h/2 below base_link → offset = sph_r - box_h/2 -->
+    <origin xyz="-0.13 0 ${-sph_r - box_h / 2}" rpy="0 0 0"/>
+  </joint>
+
+
+  <link name="lidar_link">
+
+    <visual>
+      <geometry>
+        <cylinder radius="0.05" length="0.04"/>
+      </geometry>
+      <material name="light blue">
+        <color rgba="0.678 0.847 0.902 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="0.05" length="0.04"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="0.1"/>
+      <inertia
+        ixx="${0.05 / 12 * (3 * (0.05)**2 + (0.04)**2)}" ixy="0" ixz="0"
+        iyy="${0.05 / 12 * (3 * (0.05)**2 + (0.04)**2)}" iyz="0"
+        izz="${0.1 / 2  *  (0.05)**2}"/>
+    </inertial>
+
+  </link>
+
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="lidar_link"/>
+    <origin xyz="0 0 0.07" rpy="0 0 0"/>
+  </joint>
+
+
+</robot>

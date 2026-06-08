@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing my_robot_perception.egg-info/PKG-INFO
+writing dependency_links to my_robot_perception.egg-info/dependency_links.txt
+writing entry points to my_robot_perception.egg-info/entry_points.txt
+writing requirements to my_robot_perception.egg-info/requires.txt
+writing top-level names to my_robot_perception.egg-info/top_level.txt
+reading manifest file 'my_robot_perception.egg-info/SOURCES.txt'
+writing manifest file 'my_robot_perception.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/python3.12/site-packages/my-robot-perception.egg-link (link to .)
+Installing goal_checker_node script to /home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/my_robot_perception
+Installing scan_to_pointcloud_node script to /home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception/lib/my_robot_perception
+
+Installed /home/j/jferber/tutorial/my_robot_ws/build/my_robot_perception
+running symlink_data

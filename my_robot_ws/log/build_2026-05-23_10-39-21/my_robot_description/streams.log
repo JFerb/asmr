@@ -1,0 +1,25 @@
+[6.689s] Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --build /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description -- -j32 -l32
+[11.362s] Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --build /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description -- -j32 -l32
+[11.375s] Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --install /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description
+[11.380s] -- Install configuration: ""
+[11.380s] -- Execute custom install script
+[11.380s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/urdf/.ipynb_checkpoints/my_robot.urdf-checkpoint.xacro
+[11.381s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/urdf/.ipynb_checkpoints/robot-checkpoint.gazebo
+[11.381s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot.urdf.xacro
+[11.381s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/urdf/robot.gazebo
+[11.381s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[11.381s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[11.381s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[11.381s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[11.381s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[11.381s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[11.382s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[11.382s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[11.382s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[11.382s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[11.382s] -- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[11.403s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[11.403s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[11.403s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[11.404s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.xml
+[11.922s] Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_nav:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_perception:/home/j/jferber/tutorial/my_robot_ws/install/my_robot_control:/opt/ros/jazzy /usr/bin/cmake --install /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description

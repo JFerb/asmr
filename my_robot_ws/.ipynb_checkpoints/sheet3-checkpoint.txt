@@ -1,0 +1,38 @@
+## Exercise sheet 3, Task 4
+
+Lidar info:
+
+angle_min: -3.141590118408203
+angle_max: 3.141590118408203
+angle_increment: 0.017501894384622574
+
+range_min: 0.10000000149011612
+range_max: 10.0
+Length of ranges array: 360
+
+Find the range of the straight lidar beam (0 rad):
+-pi + n * 1/360 * 2pi = 0, so n = pi/(180/pi) = 180
+So, the 180th element in the ranges array corresponds to the 0 rad beam!
+
+If we changed the angular resolution to 0.5 degrees instead of 1 degree, we would have 720 instead of 360 measurements. This means the corresponding index has to be changed to 720/2 - 1 = 359, similar to the above calculation. 
+
+
+## Exercise sheet 3, Task 5
+
+Starting measurements:
+ranges[179] = 2.0
+pose.pose.position.x = 2.7e-06 = 0.0
+
+Ending measurements:
+ranges[179] = 1.00169
+pose.pose.position.x = 1.00000273
+
+d) Odometry more reliable than LiDAR: Short distances, bad LiDAR cicrumstances
+LiDAR more reliable than Odometry: Longer distances, position relative to objects
+
+
+## Exercise sheet 3, Task 6
+
+a) 1.Polar coordinates for 0 rad degree beam: x= r*cos(theta) = 2 * cos(0) = 2, y = r*sin(theta) = 2*sin(0) = 0, so (x,y,theta) = (2,0,0)
+2. We are in the frame of the lidar_link, so we are expressing it from the coordinate system, where the lidar link is the origin
+3. I expect the change to be exactly the difference in height between the lidar link and the base link, which is 0.07m based in the urdf joint.

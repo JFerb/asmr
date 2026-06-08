@@ -1,0 +1,3 @@
+[console_scripts]
+goal_checker_node = my_robot_perception.goal_checker_node:main
+scan_to_pointcloud_node = my_robot_perception.scan_to_pointcloud_node:main

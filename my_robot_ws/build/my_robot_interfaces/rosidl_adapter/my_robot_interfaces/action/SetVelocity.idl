@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_robot_interfaces/action/SetVelocity.action
+// generated code does not contain a copyright notice
+
+
+module my_robot_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal — request a constant velocity command. The controller publishes" "\n"
+      "/cmd_vel at its tick rate using these values until a new goal preempts" "\n"
+      "this one or the client cancels.")
+    struct SetVelocity_Goal {
+      double linear_x;
+
+      double angular_z;
+    };
+    @verbatim (language="comment", text=
+      "Result — populated on cancel / preempt / shutdown.")
+    struct SetVelocity_Result {
+      boolean stopped;
+    };
+    @verbatim (language="comment", text=
+      "Feedback — published at the controller's tick rate.")
+    struct SetVelocity_Feedback {
+      double current_linear_x;
+
+      double current_angular_z;
+    };
+  };
+};

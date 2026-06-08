@@ -1,0 +1,25 @@
+[0.913s] Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description -- -j32 -l32
+[1.511s] Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description -- -j32 -l32
+[1.601s] Invoking command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description
+[1.913s] -- Install configuration: ""
+[1.958s] -- Execute custom install script
+[1.969s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/urdf/.ipynb_checkpoints/my_robot.urdf-checkpoint.xacro
+[1.970s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/urdf/.ipynb_checkpoints/robot-checkpoint.gazebo
+[1.971s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/urdf/my_robot.urdf.xacro
+[1.972s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/urdf/robot.gazebo
+[1.977s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[1.979s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[1.982s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[1.983s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[1.984s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[1.984s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[1.985s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[1.986s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[1.987s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[1.987s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[1.988s] -- Symlinking: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[2.021s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[2.027s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[2.028s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[2.029s] -- Up-to-date symlink: /home/j/jferber/tutorial/my_robot_ws/install/my_robot_description/share/my_robot_description/package.xml
+[2.037s] Invoked command in '/home/j/jferber/tutorial/my_robot_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/j/jferber/tutorial/my_robot_ws/build/my_robot_description
