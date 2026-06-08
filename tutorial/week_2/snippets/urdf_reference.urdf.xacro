@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<!--
+  URDF syntax reference — Week 2
+  ================================
+  This file shows the structure of links and joints for the three
+  geometry types used in the exercise (box, cylinder, sphere) and
+  the two joint types (continuous, fixed).  It is NOT a robot you
+  can launch — use it as a look-up while writing my_robot.urdf.xacro.
+
+  Xacro properties let you define a value once and reference it
+  everywhere with ${name}.  Xacro also evaluates arithmetic, so
+  inertia tensors can be expressed as formulas rather than numbers.
+
+  Inertia formulas
+  ----------------
+  Box  (l × w × h along x, y, z):
+    Ixx = m/12 * (w² + h²)
+    Iyy = m/12 * (l² + h²)
+    Izz = m/12 * (l² + w²)
+
+  Cylinder (radius r, length l, axis along local z):
+    Ixx = Iyy = m/12 * (3r² + l²)
+    Izz = m/2  * r²
+
+  Sphere (radius r):
+    Ixx = Iyy = Izz = 2/5 * m * r²
+-->
+<robot name="reference" xmlns:xacro="http://ros.org/wiki/xacro">
+
+
+  <!-- ============================================================
+       PROPERTIES — define once, use everywhere
+       ============================================================ -->
+
+  <!-- Box (chassis) -->
+  <xacro:property name="box_l"    value="0.30"/>  <!-- length along x [m] -->
+  <xacro:property name="box_w"    value="0.20"/>  <!-- width  along y [m] -->
+  <xacro:property name="box_h"    value="0.10"/>  <!-- height along z [m] -->
+  <xacro:property name="box_m"    value="5.0"/>   <!-- mass [kg]          -->
+
+  <!-- Cylinder (drive wheel) -->
+  <xacro:property name="cyl_r"    value="0.05"/>  <!-- radius [m]  -->
+  <xacro:property name="cyl_l"    value="0.03"/>  <!-- length [m]  -->
+  <xacro:property name="cyl_m"    value="0.5"/>   <!-- mass   [kg] -->
+
+  <!-- Sphere (caster) -->
+  <xacro:property name="sph_r"    value="0.025"/> <!-- radius [m]  -->
+  <xacro:property name="sph_m"    value="0.1"/>   <!-- mass   [kg] -->
+
+
+  <!-- ============================================================
+       BOX LINK  (e.g. chassis)
+       ============================================================ -->
+  <link name="box_link">
+
+    <visual>
+      <geometry>
+        <box size="${box_l} ${box_w} ${box_h}"/>
+      </geometry>
+      <material name="grey">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="${box_l} ${box_w} ${box_h}"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="${box_m}"/>
+      <inertia
+        ixx="${box_m / 12 * (box_w**2 + box_h**2)}" ixy="0" ixz="0"
+        iyy="${box_m / 12 * (box_l**2 + box_h**2)}" iyz="0"
+        izz="${box_m / 12 * (box_l**2 + box_w**2)}"/>
+    </inertial>
+
+  </link>
+
+
+  <!-- ============================================================
+       CYLINDER LINK  (e.g. drive wheel)
+       The cylinder axis is along local z by default.
+       To spin the wheel around the world y-axis, rotate the link
+       frame with rpy="-1.5708 0 0" on the parent joint so that
+       local z aligns with world y.
+       ============================================================ -->
+  <link name="cylinder_link">
+
+    <visual>
+      <geometry>
+        <cylinder radius="${cyl_r}" length="${cyl_l}"/>
+      </geometry>
+      <material name="dark">
+        <color rgba="0.2 0.2 0.2 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <cylinder radius="${cyl_r}" length="${cyl_l}"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="${cyl_m}"/>
+      <inertia
+        ixx="${cyl_m / 12 * (3 * cyl_r**2 + cyl_l**2)}" ixy="0" ixz="0"
+        iyy="${cyl_m / 12 * (3 * cyl_r**2 + cyl_l**2)}" iyz="0"
+        izz="${cyl_m / 2  *  cyl_r**2}"/>
+    </inertial>
+
+  </link>
+
+
+  <!-- ============================================================
+       SPHERE LINK  (e.g. caster)
+       ============================================================ -->
+  <link name="sphere_link">
+
+    <visual>
+      <geometry>
+        <sphere radius="${sph_r}"/>
+      </geometry>
+      <material name="light">
+        <color rgba="0.8 0.8 0.8 1.0"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <sphere radius="${sph_r}"/>
+      </geometry>
+    </collision>
+
+    <inertial>
+      <mass value="${sph_m}"/>
+      <inertia
+        ixx="${2/5 * sph_m * sph_r**2}" ixy="0" ixz="0"
+        iyy="${2/5 * sph_m * sph_r**2}" iyz="0"
+        izz="${2/5 * sph_m * sph_r**2}"/>
+    </inertial>
+
+  </link>
+
+
+  <!-- ============================================================
+       CONTINUOUS JOINT  (unlimited rotation — use for drive wheels)
+       ============================================================ -->
+  <joint name="example_continuous_joint" type="continuous">
+    <parent link="box_link"/>
+    <child  link="cylinder_link"/>
+    <!-- origin: position of child frame relative to parent frame -->
+    <origin xyz="0.05 0.13 ${-box_h / 2}" rpy="-1.5708 0 0"/>
+    <!-- axis: rotation axis in the child frame after rpy is applied -->
+    <axis xyz="0 0 1"/>
+    <dynamics damping="0.1" friction="0.1"/>
+  </joint>
+
+
+  <!-- ============================================================
+       FIXED JOINT  (no motion — use for caster, sensors, …)
+       ============================================================ -->
+  <joint name="example_fixed_joint" type="fixed">
+    <parent link="box_link"/>
+    <child  link="sphere_link"/>
+    <!-- z: sphere must touch the ground → sph_r above ground,
+         box_h/2 below base_link → offset = sph_r - box_h/2 -->
+    <origin xyz="-0.13 0 ${-sph_r - box_h / 2}" rpy="0 0 0"/>
+  </joint>
+
+
+</robot>

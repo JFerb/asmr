@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- ===== Differential drive ===== -->
+  <!-- TODO: Update wheel_separation to match your URDF.
+       It is the centre-to-centre distance of the two wheel joints along y.
+       Check the joint origins you defined in Task 3. -->
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system"
+            name="gz::sim::systems::DiffDrive">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>0.26</wheel_separation>
+      <wheel_radius>0.05</wheel_radius>
+      <odom_publish_frequency>50</odom_publish_frequency>
+      <topic>cmd_vel</topic>
+      <odom_topic>odom</odom_topic>
+      <tf_topic>/tf</tf_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_link</child_frame_id>
+    </plugin>
+  </gazebo>
+
+  <!-- TODO: Add the joint state publisher plugin (gz-sim-joint-state-publisher-system).
+       This replaces joint_state_publisher_gui in simulation — Gazebo publishes
+       the actual joint angles. Set <topic>joint_states</topic> inside the plugin.
+       Use the same <gazebo><plugin ...>...</plugin></gazebo> structure as above. -->
+
+  <!-- TODO: Add surface properties for left_wheel_link and right_wheel_link.
+       Use a <gazebo reference="link_name"> block for each wheel.
+       Set mu1 and mu2 to 1.0 (Coulomb friction — keeps wheels from slipping).
+       You will vary these values in Task 9 to observe drift. -->
+
+  <!-- TODO: Add surface properties for caster_link.
+       Same structure as the wheel blocks, but set mu1 and mu2 to 0.0
+       so the caster does not resist lateral motion. -->
+
+</robot>
