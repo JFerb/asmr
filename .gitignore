@@ -1,0 +1,14 @@
+# ROS 2 colcon workspace (my_robot_ws)
+my_robot_ws/build/
+my_robot_ws/install/
+my_robot_ws/log/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store

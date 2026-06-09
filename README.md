@@ -19,3 +19,23 @@ Treat `tutorial/` as read-only reference. Start with [`tutorial/README.md`](tuto
 git fetch tutorial
 git subtree pull --prefix=tutorial tutorial main --squash
 ```
+
+## ROS workspace (`my_robot_ws`)
+
+`build/`, `install/`, and `log/` are not tracked — they are created locally by colcon.
+
+After cloning or pulling, build from scratch:
+
+```bash
+cd my_robot_ws
+source /opt/ros/jazzy/setup.bash
+colcon build --symlink-install
+source install/setup.bash
+```
+
+If you moved the workspace or see CMake path errors, delete the artifacts first:
+
+```bash
+rm -rf build install log
+colcon build --symlink-install
+```
