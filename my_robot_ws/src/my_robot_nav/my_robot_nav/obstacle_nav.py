@@ -91,7 +91,7 @@ class ObstacleNavNode(Node):
             return
 
     def send_goal(self, linear_x: float, angular_z: float):
-        goal = SetVelocity.Goal()kr
+        goal = SetVelocity.Goal()
         goal.linear_x = linear_x
         goal.angular_z = angular_z
 
