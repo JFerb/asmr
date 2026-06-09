@@ -1,2 +1,0 @@
-[console_scripts]
-obstacle_nav = my_robot_nav.obstacle_nav:main

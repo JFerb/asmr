@@ -1,1 +1,0 @@
-/home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces/rosidl_generator_c/my_robot_interfaces/action/detail/set_velocity__type_support.h

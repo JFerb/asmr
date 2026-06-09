@@ -1,1 +1,0 @@
-/home/j/jferber/tutorial/my_robot_ws/build/my_robot_interfaces/rosidl_generator_rs/my_robot_interfaces/rust/src/action.rs
