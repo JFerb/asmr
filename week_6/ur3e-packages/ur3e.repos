@@ -1,0 +1,25 @@
+repositories:
+  ur_msgs:
+    type: git
+    url: https://github.com/ros-industrial/ur_msgs
+    version: humble
+
+  Universal_Robots_Client_Library:
+    type: git
+    url: https://github.com/UniversalRobots/Universal_Robots_Client_Library
+    version: 1.9.0
+
+  Universal_Robots_ROS2_GZ_Simulation:
+    type: git
+    url: https://github.com/MOGI-ROS/Universal_Robots_ROS2_GZ_Simulation
+    version: ros2
+
+  Universal_Robots_ROS2_Description:
+    type: git
+    url: https://github.com/MOGI-ROS/Universal_Robots_ROS2_Description
+    version: ros2
+
+  Universal_Robots_ROS2_Driver:
+    type: git
+    url: https://github.com/MOGI-ROS/Universal_Robots_ROS2_Driver
+    version: ros2
