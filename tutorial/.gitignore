@@ -53,3 +53,9 @@ package-lock.json
 week_0/python-intro/data/sensor_data.csv
 week_0/python-intro/data/my_random_data.csv
 week_0/python-intro/data/robot_runs.csv
+# Week 6 — vcs-cloned UR driver deps (regenerate via `vcs import`)
+week_6/private/ur3e_ws/src/Universal_Robots_Client_Library/
+week_6/private/ur3e_ws/src/Universal_Robots_ROS2_Description/
+week_6/private/ur3e_ws/src/Universal_Robots_ROS2_Driver/
+week_6/private/ur3e_ws/src/Universal_Robots_ROS2_GZ_Simulation/
+week_6/private/ur3e_ws/src/ur_msgs/

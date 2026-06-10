@@ -15,14 +15,14 @@ A 2-link planar arm with interactive visualisations. Work through the exercises 
 What you will implement (in the `TwoLinkArm` class):
 
 - Homogeneous transform `ht2d(theta, tx, ty)` and point transformation
-- Forward kinematics: `forward_kinematics(theta1, theta2) -> (x, y)`
+- Forward kinematics: `forward_kinematics(theta) -> (x, y)` where `theta = [theta1, theta2]`
 - Workspace visualisation: scatter all reachable $(x, y)$ over $\theta \in [-\pi, \pi]$
-- Geometric inverse kinematics: `ik_geometric(x, y)` — both elbow-up and elbow-down solutions
+- Geometric inverse kinematics: `ik_geometric(x, y, elbow_up=True)` — both elbow-up and elbow-down solutions
 - Jacobian matrix: 4 partial derivatives of FK with respect to joint angles
 - Iterative Jacobian IK: converge to a target from an initial joint configuration
 - Singularity analysis: heatmap of $\det(J)$ over joint space
 
-### ROS 2 — UR3e Arm Exploration (`exercise_ros6.pdf`)
+### ROS 2 — UR3e Arm Exploration (`exercise_ros.pdf`)
 
 An exploration exercise — no node-writing. You launch a UR3e arm in Gazebo with MoveIt and inspect the system:
 
@@ -31,15 +31,15 @@ An exploration exercise — no node-writing. You launch a UR3e arm in Gazebo wit
 - Use the MoveIt interactive marker to plan and execute trajectories; observe multiple IK solutions
 - Send manual joint commands and observe limit enforcement
 
-The UR3e packages are in `ur3e_packages.zip` — extract into your workspace.
+The UR3e packages are in `ur3e-packages/` — copy into your workspace.
 
 ## Contents
 
 | File | Description |
 |------|-------------|
 | `exercise.ipynb` | FK/IK notebook — 2-link planar arm with interactive widgets |
-| `exercise_ros6.pdf` | UR3e exploration exercise (3 tasks) |
-| `ur3e_packages.zip` | UR3e ROS 2 packages — extract into your workspace |
+| `exercise_ros.pdf` | UR3e exploration exercise (3 tasks) |
+| `ur3e-packages/` | UR3e workspace setup: wrapper package, `.repos` manifest, and Jazzy compatibility patch — full setup procedure is in `exercise_ros.pdf` |
 | `slides.pdf` | Session slides: homogeneous transforms, FK/IK, Jacobian, singularities, MoveIt |
 
 ## Learning Objectives
