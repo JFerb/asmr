@@ -1,46 +1,71 @@
-# Week 7 — MiniLab 2: Localisation and Arm Trajectory
+# Week 7 — MiniLab 2: Arm Kinematics & Mobile Manipulation
 
 ## Overview
 
-MiniLab 2 has two independent tracks, each worth separate points. You choose the order and can work on them in parallel.
+MiniLab 2 is a pure **ROS 2** exercise. You give your MiniLab 1 robot an *arm* — and
+with it, the ability to interact with the world. Two sequential tasks build on each
+other:
 
-The **Jupyter track** asks: *where is the robot?* You implement probabilistic localisation from scratch — first on a 1D discrete grid (Markov), then in a 2D continuous world with landmarks (Monte Carlo). The **ROS 2 track** applies the FK/IK from Week 6 to a real arm in simulation: you build a full kinematic service stack and command the arm through a trajectory that pushes a box.
+- **Task 1 — Build & tune the arm control stack (25 pts).** On a fixed pedestal arm:
+  implement the kinematics services (FK/IK ported from your Week 6 notebook),
+  complete and tune the closed-loop PID controller, build the `ExecuteTrajectory`
+  action server that designs a smooth trajectory to a target, and prove it with a
+  push-block mission.
+- **Task 2 — Run the mission (25 pts).** Mount that arm on your mobile robot, drive a
+  straight corridor with LiDAR, push a hinged door open with the arm, and enter the
+  room beyond — structured as a behaviour-based mission protocol.
 
-**Deadline:** Submit before Week 9.
+**ROS 2:** Jazzy · **Simulator:** Gazebo Harmonic
+**Issued:** 19.06.2026 · **Due:** 01.07.2026, 23:59 (submit to LearnWeb)
 
 ## Tasks
 
-The full task descriptions, interface specifications, acceptance criteria, and submission format are in `minilab_2.pdf`. Read it carefully before starting.
+The full task descriptions, interface specifications, acceptance criteria, and
+submission format are in `minilab_2.pdf`. **Read it carefully before starting.**
 
-| Track | Task | Points |
-|-------|------|--------|
-| Jupyter | Markov localisation: implement `predict()` and `update()` in an `Agent` class; 9-step belief evolution plot | 10 pts |
-| Jupyter | Monte Carlo localisation: implement `move()`, `sense()`, `resample()`, `redistribute()` in a particle filter; 30-step convergence panel | 10 pts |
-| ROS 2 | Kinematics node: define `ComputeFK.srv` + `ComputeIK.srv` and implement the service server (port from Week 6 notebook) | 5 pts |
-| ROS 2 | Trajectory node: define `ExecuteTrajectory.action` and implement the action server with linear joint interpolation and feedback | 15 pts |
-| ROS 2 | Push client: send a home→approach→push trajectory that visibly displaces the box in Gazebo | 10 pts |
+| Task | Subtask | Points |
+|------|---------|--------|
+| 1 | Kinematics server (FK/IK services) | 5 |
+| 1 | Tune the controller | 5 |
+| 1 | Trajectory action server | 10 |
+| 1 | Push-block mission + launch | 5 |
+| 2 | Mount the arm | 5 |
+| 2 | Bring up the system | 5 |
+| 2 | Drive the corridor | 5 |
+| 2 | Open the door & enter the room | 10 |
 
 **Total: 50 pts. Pass at 25 pts.**
 
-## Getting Started
+## Getting started
 
-Open `exercise_localisation.ipynb` for the Jupyter track and work through both parts.
+Build your solution in the provided starter workspace (`reference_ws/`). It provides
+the parts you should not have to rebuild — robot/arm descriptions, the worlds, the
+pinned service/action interfaces, perception helpers, and the controller/hardware
+**templates** you complete — and leaves the graded packages for you to create. Its
+own `README.md` lists exactly what is provided vs what you build.
 
-For the ROS 2 track, extract `asmr_arm_ws.zip` into your workspace. It contains `asmr_arm_description` — the provided arm URDF, Gazebo world (`push_world.sdf`), and launch file. You create `asmr_arm_interfaces` and `asmr_arm_control` from scratch following the task sheet.
+```bash
+cd reference_ws
+source /opt/ros/jazzy/setup.bash
+colcon build
+source install/setup.bash
+```
+
+Then work through `minilab_2.pdf` task by task. You may build on your own MiniLab 1
+robot or the provided reference robot.
 
 ## Contents
 
 | File | Description |
 |------|-------------|
-| `exercise_localisation.ipynb` | Localisation notebook — Markov and Monte Carlo |
 | `minilab_2.pdf` | Full task description, interface specs, acceptance criteria, submission format |
-| `asmr_arm_ws.zip` | Provided arm packages — extract into your ROS 2 workspace |
-| `slides.pdf` | Session slides: Bayesian filter, predict/update, Markov vs particle filter, arm demo |
+| `reference_ws/` | Starter ROS 2 workspace — build your solution here |
+| `slides.pdf` | Session slides: the control stack, Perceive–Reason–Act, the mission protocol |
 
 ## Learning Objectives
 
-- Implement the Bayes filter predict and update steps on a discrete 1D belief
-- Implement a particle filter: propagate, weight, resample, and redistribute particles
-- Define custom ROS 2 service and action interfaces (`.srv`, `.action`)
-- Implement a ROS 2 action server with a `MultiThreadedExecutor` and service clients
-- Command an arm through a trajectory using IK-computed joint angles with smooth interpolation
+- Transfer your Week 6 FK/IK into live ROS 2 services with proper service conventions
+- Configure and tune a `ros2_control` PID controller (hardware interfaces + gains)
+- Implement a ROS 2 action server: trajectory design, the full goal/feedback/result/cancel contract, and executors / callback groups
+- Compose sensor-responsive behaviours into a reactive mission (behaviour-based control / a finite state machine)
+- Mount and command an arm on a mobile base; LiDAR-driven corridor navigation and arm targeting

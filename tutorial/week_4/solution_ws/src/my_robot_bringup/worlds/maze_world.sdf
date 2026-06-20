@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!--
+  Maze World — MiniLab 1
+  6 m x 3 m walled maze. Three corridor segments (~1 m wide each).
+  Robot spawns at (0.5, 0.5) facing +x.
+  Goal: cyan cylinder at (0.5, 2.5).
+  Launch parameters: nav_mode=maze_rhr  goal_x=0.5  goal_y=2.5
+
+  Corridor layout (top view, y increases upward):
+    Top corridor:    y=[2.0, 3.0], full width (goal in NW corner)
+    Right section:   x=[4.5, 6.0], y=[1.0, 2.0] (vertical connection)
+    Bottom corridor: y=[0.0, 1.0], full width (robot starts here)
+
+  Inner wall A: y=1.0, x=[0.0, 4.5] — gap at x=[4.5, 6.0]
+  Inner wall B: y=2.0, x=[0.0, 4.5] — gap at x=[4.5, 6.0]
+
+  Right-hand rule trace:
+    1. East along bottom corridor (right wall = south)
+    2. At east wall, front blocked + right open (wall ends) — turn left (north)
+    3. North along east side (right wall = east)
+    4. At north wall — turn left (west)
+    5. West along top corridor (right wall = north) → reach goal
+-->
+<sdf version="1.9">
+  <world name="maze_world">
+
+    <physics name="default" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system"
+            name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient><diffuse>0.8 0.8 0.8 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_south">
+      <static>true</static>
+      <pose>3.0 0.05 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>6.0 0.1 1.0</size></box></geometry></collision>
+        <visual name="vis">
+          <geometry><box><size>6.0 0.1 1.0</size></box></geometry>
+          <material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_north">
+      <static>true</static>
+      <pose>3.0 2.95 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>6.0 0.1 1.0</size></box></geometry></collision>
+        <visual name="vis">
+          <geometry><box><size>6.0 0.1 1.0</size></box></geometry>
+          <material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_west">
+      <static>true</static>
+      <pose>0.05 1.5 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>0.1 3.0 1.0</size></box></geometry></collision>
+        <visual name="vis">
+          <geometry><box><size>0.1 3.0 1.0</size></box></geometry>
+          <material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_east">
+      <static>true</static>
+      <pose>5.95 1.5 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>0.1 3.0 1.0</size></box></geometry></collision>
+        <visual name="vis">
+          <geometry><box><size>0.1 3.0 1.0</size></box></geometry>
+          <material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Inner wall A: y=1.0, x=[0, 4.5]; centre=(2.25, 1.0) -->
+    <model name="inner_wall_a">
+      <static>true</static>
+      <pose>2.25 1.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>4.5 0.1 1.0</size></box></geometry></collision>
+        <visual name="vis">
+          <geometry><box><size>4.5 0.1 1.0</size></box></geometry>
+          <material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Inner wall B: y=2.0, x=[0, 4.5]; centre=(2.25, 2.0) -->
+    <model name="inner_wall_b">
+      <static>true</static>
+      <pose>2.25 2.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>4.5 0.1 1.0</size></box></geometry></collision>
+        <visual name="vis">
+          <geometry><box><size>4.5 0.1 1.0</size></box></geometry>
+          <material><ambient>0.6 0.6 0.6 1</ambient><diffuse>0.6 0.6 0.6 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Goal (0.5, 2.5): no Gazebo model. The goal_checker_node publishes a
+         Marker on /goal_marker for RViz. -->
+
+
+  </world>
+</sdf>
