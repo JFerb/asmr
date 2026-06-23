@@ -3,6 +3,13 @@ my_robot_ws/build/
 my_robot_ws/install/
 my_robot_ws/log/
 
+minilab2_ws/build/
+minilab2_ws/install/
+minilab2_ws/log/
+
+# Workspace for week 6
+ur3e_ws
+
 # Jupyter
 .ipynb_checkpoints/
 *-checkpoint.*
@@ -20,3 +27,4 @@ Thumbs.db
 *~
 *.swp
 *.swo
+
