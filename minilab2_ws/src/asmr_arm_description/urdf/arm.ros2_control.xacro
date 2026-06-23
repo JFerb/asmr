@@ -16,17 +16,26 @@
       <!-- TEMPLATE: declare the hardware interfaces for each actuated joint -
            the command interface you drive, and the state interfaces you read
            back. -->
-      <joint name="">
+      <joint name="shoulder">
         <!-- command interface: one of  position | velocity | effort -->
-        <command_interface name="">
+        <command_interface name="effort">
           <!-- actuator commaneded limits, e.g. torque limits for effort control  -->
-          <param name="min"></param>
-          <param name="max"></param>
+          <param name="min">-30.0</param>
+          <param name="max">30.0</param>
         </command_interface>
         <!-- state interfaces to read back (e.g. position, velocity) -->
-        <state_interface name=""/>
-        <state_interface name=""/>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
       </joint>
+
+      <joint name="elbow">
+        <command_interface name="effort">
+          <param name="min">-30.0</param>
+          <param name="max">30.0</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+      </joint>  
     </ros2_control>
 
     <gazebo>
