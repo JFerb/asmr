@@ -28,19 +28,19 @@ class KinematicsNode(Node):
             response.success = False
             return response
         t1, t2 = request.theta1, request.theta2
-        response.x = self.l1 * math.cos(t1) + self.l2 * math.cos(t1 + t2)
-        response.y = self.l1 * math.sin(t1) + self.l2 * math.sin(t1 + t2)
+        response.x = self.l1 * math.sin(t1) + self.l2 * math.sin(t1 + t2)
+        response.y = self.l1 * math.cos(t1) + self.l2 * math.cos(t1 + t2)
         response.success = True
         return response
         
     def compute_ik(self, request, response):
         x, y = request.x, request.y
         D = (x**2 + y**2 - self.l1**2 - self.l2**2)/(2 * self.l1 * self.l2)
-        if D > 1:
-            request.success = False
-            return request
-        t2 = math.atan2(math.sqrt(1 - D**2), D)
-        t1 = math.atan2(y, x) - math.atan2(self.l2 * math.sin(t2), self.l1 + self.l2 * math.cos(t2))
+        if D > 1 or D < -1:
+            response.success = False
+            return response
+        t2 = math.atan2(-math.sqrt(1 - D**2), D)
+        t1 = math.atan2(x, y) - math.atan2(self.l2 * math.sin(t2), self.l1 + self.l2 * math.cos(t2))
         response.theta1 = t1
         response.theta2 = t2
         response.success = True 

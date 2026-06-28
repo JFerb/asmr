@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'asmr_arm_control'
+package_name = 'asmr_arm_mission'
 
 setup(
     name=package_name,
@@ -13,8 +13,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='jferber',
-    maintainer_email='julius.ferber@t-online.de',
+    maintainer='hheidema',
+    maintainer_email='hheidema@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={
@@ -24,8 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'kinematics_server = asmr_arm_control.kinematics_server:main',
-            'trajectory_server = asmr_arm_control.trajectory_server:main'
+            'push_block_mission = asmr_arm_mission.push_block_mission:main'
         ],
     },
 )
