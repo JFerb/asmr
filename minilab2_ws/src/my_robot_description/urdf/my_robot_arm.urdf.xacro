@@ -1,16 +1,26 @@
 <?xml version="1.0"?>
 <robot name="my_robot_arm" xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <!-- Base diff-drive robot (chassis, wheels, caster, LiDAR, gazebo plugins) -->
   <xacro:include filename="$(find my_robot_description)/urdf/my_robot.urdf.xacro"/>
 
-  <!-- Suppress the standalone pedestal/world block when arm.urdf.xacro is included here -->
   <xacro:arg name="standalone" default="false"/>
+  <xacro:arg name="use_sim_control" default="false"/>
+  <xacro:arg name="dimensions_file"
+             default="$(find asmr_arm_description)/config/arm_dimensions.yaml"/>
 
-  <!-- TASK 2(a): include the arm macro (asmr_arm_description/urdf/arm.urdf.xacro),
-       mount it on base_link so it faces forward, pass its link lengths (create an
-       arm_dimensions.yaml, modelled on the pedestal one), and wire its
-       ros2_control (arm.ros2_control.xacro + your controllers_mobile.yaml).
-       See "The Arm". -->
+  <xacro:include filename="$(find asmr_arm_description)/urdf/arm.urdf.xacro"/>
+
+  <xacro:property name="dims_path" value="$(arg dimensions_file)"/>
+  <xacro:property name="dims" value="${xacro.load_yaml(dims_path)}"/>
+
+  <xacro:asmr_arm parent="base_link" l1="${dims['l1']}" l2="${dims['l2']}">
+    <origin xyz="0.15 0.0 0.05" rpy="0 0 -1.5708"/>
+  </xacro:asmr_arm>
+
+  <xacro:if value="$(arg use_sim_control)">
+    <xacro:include filename="$(find asmr_arm_description)/urdf/arm.ros2_control.xacro"/>
+    <xacro:arm_ros2_control
+        controllers_file="$(find asmr_arm_description)/config/controllers_mobile.yaml"/>
+  </xacro:if>
 
 </robot>
